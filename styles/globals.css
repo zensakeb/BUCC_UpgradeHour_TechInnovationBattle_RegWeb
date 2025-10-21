@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap');
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: #050016;
+  color: #fff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* === Neon Text Effects === */
+.neon-cyan {
+  color: #00fff7;
+  text-shadow: 0 0 5px #00fff7, 0 0 15px #00fff7, 0 0 30px #00fff7;
+}
+
+.neon-purple {
+  color: #b366ff;
+  text-shadow: 0 0 5px #b366ff, 0 0 15px #b366ff, 0 0 30px #b366ff;
+}
+
+.neon-pink {
+  color: #ff77e9;
+  text-shadow: 0 0 5px #ff77e9, 0 0 15px #ff77e9, 0 0 30px #ff77e9;
+}
+
+/* === Animated Gradient Text === */
+.gradient-text {
+  background: linear-gradient(90deg, #00fff7, #b366ff, #ff77e9, #00fff7);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Glow Hover === */
+.hover-glow:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 8px currentColor, 0 0 20px currentColor;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes bgGlow {
+  0%, 100% { background-color: rgba(0,0,0,0.5); }
+  50% { background-color: rgba(0,0,40,0.7); }
+}
+
+.glow-bg {
+  animation: bgGlow 8s ease-in-out infinite;
+}
+
