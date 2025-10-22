@@ -10,7 +10,7 @@ export default function Home() {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const target = new Date('2025-10-28T23:59:59Z').getTime();
+    const target = new Date('2025-10-29T23:59:59Z').getTime();
     const tick = () => {
       const diff = Math.max(0, target - Date.now());
       setCountdown({
@@ -115,7 +115,7 @@ export default function Home() {
             BUCC Presents
           </motion.h2>
 
-          <motion.h1 ref={parallaxRefs.upgrade} initial="hidden" animate="show" variants={fadeUp} className="text-6xl md:text-7xl font-orbitron gradient-text hover-glow">
+          <motion.h1 ref={parallaxRefs.upgrade} initial="hidden" animate="show" variants={fadeUp} className="text-3xl md:text-6xl font-orbitron gradient-text hover-glow">
             UpgradeHour
           </motion.h1>
 
