@@ -159,16 +159,18 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-bold text-indigo-300 mb-4">Marking Criteria</h2>
               <div className="grid md:grid-cols-3 gap-6 text-left">
                 <div>
-                  <h3 className="font-semibold text-lg text-cyan-300">Module 1: Concept &amp; Design</h3>
+                  <h3 className="font-semibold text-lg text-cyan-300">Module 1: Concept &amp; Design : 10 Marks</h3>
                   <ul className="list-disc list-inside text-gray-200 mt-2 space-y-1">
                     <li>Problem relevance</li>
                     <li>Originality &amp; innovation</li>
                     <li>Mockups / Figma prototype quality</li>
                     <li>Feasibility &amp; design clarity</li>
+                    <li>Technical approach</li>
+                    <li>Team collaboration &amp; presentation</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg text-cyan-300">Module 2: Prototype / Implementation</h3>
+                  <h3 className="font-semibold text-lg text-cyan-300">Module 2: Prototype / Implementation : 20 Marks</h3>
                   <ul className="list-disc list-inside text-gray-200 mt-2 space-y-1">
                     <li>Core feature functionality</li>
                     <li>Extra/bonus features</li>
@@ -179,7 +181,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg text-cyan-300">Final Presentation &amp; Demo</h3>
+                  <h3 className="font-semibold text-lg text-cyan-300">Final Presentation &amp; Demo : 45 Marks</h3>
                   <ul className="list-disc list-inside text-gray-200 mt-2 space-y-1">
                     <li>Problem framing &amp; clarity</li>
                     <li>Technical execution &amp; demo</li>
