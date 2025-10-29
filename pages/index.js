@@ -132,7 +132,11 @@ export default function Home() {
               Register Now
             </a>
           </motion.div>
-
+          <div className="text-lg text-gray-300 mb-2 mt-6">
+          <motion.h1 ref={parallaxRefs.upgrade} initial="hidden" animate="show" variants={fadeUp} className="text-3xl md:text-6xl font-orbitron gradient-text hover-glow">
+            Module 1 : Deadline - 6th Nov, 2025
+          </motion.h1>
+          </div>
           <section id="objective" className="mt-12 px-4 md:px-20">
             <motion.div whileHover={{ scale: 1.03, boxShadow: '0 10px 40px rgba(80,100,255,0.12)' }} className="bg-black/50 p-8 rounded-2xl border border-cyan-400/20 shadow-md transition-all duration-400">
               <h2 className="text-2xl md:text-3xl font-bold text-cyan-300 mb-4">Objective</h2>
