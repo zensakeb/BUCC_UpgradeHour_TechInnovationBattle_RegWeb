@@ -10,7 +10,7 @@ export default function Home() {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const target = new Date('2025-10-29T23:59:59Z').getTime();
+    const target = new Date('2025-11-01T23:59:59Z').getTime();
     const tick = () => {
       const diff = Math.max(0, target - Date.now());
       setCountdown({
