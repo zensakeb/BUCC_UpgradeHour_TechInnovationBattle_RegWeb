@@ -146,7 +146,7 @@ export default function Home() {
             <motion.div whileHover={{ scale: 1.03, boxShadow: '0 10px 40px rgba(120,88,255,0.12)' }} className="bg-black/50 p-8 rounded-2xl border border-purple-400/20 shadow-md transition-all duration-400">
               <h2 className="text-2xl md:text-3xl font-bold text-cyan-300 mb-4">Team Building</h2>
               <ul className="text-left text-lg text-gray-200 list-disc list-inside space-y-2">
-                <li>Each team must consist of five members, including one Senior Executive as the Team Leader.</li>
+                <li>Each team must consist of four members but five is max, including one Senior Executive as the Team Leader.</li>
                 <li>The remaining members should be a balanced mix of Executives and General Members to ensure cross-role collaboration.</li>
                 <li>Each participant may join only one team.</li>
                 <li>Registration must include team name, member details, idea title (150–200 words), and contact method.</li>
